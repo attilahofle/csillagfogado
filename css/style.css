@@ -349,9 +349,10 @@ p { margin: 0; font-size: 18px; line-height: 1.5; }
 .room-foot .btn { padding: .75em 1.2em; }
 
 /* ---------- Itt találsz meg minket ---------- */
-.findus .wrap { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+.findus .wrap { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
 .findus-copy { display: grid; gap: 22px; min-width: 0; justify-items: start; }
-.findus-copy h2 { font-size: var(--step-3); }
+.findus-title { grid-column: 1 / -1; font-size: var(--step-3); margin-bottom: calc(clamp(32px, 6vw, 80px) * -.4); }
+@media (min-width: 481px) { .findus-title { white-space: nowrap; } }
 .findus-copy > p { color: var(--ink-soft); max-width: 34rem; }
 .findus-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; width: 100%; max-width: 30rem; }
 .findus-list li { display: flex; align-items: center; gap: 16px; }
