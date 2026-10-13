@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Szoba 1 – Csillag Fogadó, Erdőbénye</title>
+<meta name="description" content="Szoba 1: 85 m²-es, önálló apartman két hálószobával, nappali-étkezővel és saját fürdőszobával Erdőbényén, Tokaj-Hegyalja szívében. Családoknak és kisebb társaságoknak.">
+<link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Lora:wght@500&display=swap">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/room.css">
+</head>
+<body class="page-room">
+
+<!-- IKONKÉSZLET (duotone: erdőzöld vonal + moha kitöltés) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-area" viewBox="0 0 32 32"><rect x="7" y="7" width="18" height="18" rx="2" fill="#8db58f" fill-opacity=".4" stroke="none"/><rect x="4" y="4" width="24" height="24" rx="4"/><path d="M11 21 21 11M14 11h7v7"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 32 32"><rect x="6" y="11" width="8" height="5" rx="2" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M4 7v19M4 22h24M28 26V17a4 4 0 0 0-4-4H13v7"/></symbol>
+    <symbol id="i-people" viewBox="0 0 32 32"><circle cx="12" cy="11" r="5" fill="#8db58f" fill-opacity=".45" stroke="none"/><circle cx="12" cy="11" r="5"/><path d="M3 27a9 9 0 0 1 18 0"/><circle cx="23" cy="12" r="3.5"/><path d="M24 19a7 7 0 0 1 6 7"/></symbol>
+    <symbol id="i-shower" viewBox="0 0 32 32"><path d="M12 11h12l-2 4H14z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M6 29V12a7 7 0 0 1 7-7h6"/><path d="M12 11h12l-2 4H14z"/><path d="M14 19v2M18 19v2M22 19v2M16 24v2M20 24v2"/></symbol>
+    <symbol id="i-crib" viewBox="0 0 32 32"><rect x="5" y="14" width="22" height="11" rx="2" fill="#8db58f" fill-opacity=".4" stroke="none"/><path d="M4 8v20M28 8v20M4 14h24M4 25h24M10 14v11M16 14v11M22 14v11"/></symbol>
+    <symbol id="i-tub" viewBox="0 0 32 32"><path d="M4 16h24l-2 7a4 4 0 0 1-4 3H10a4 4 0 0 1-4-3z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M4 16h24l-2 7a4 4 0 0 1-4 3H10a4 4 0 0 1-4-3zM9 16V9a3 3 0 0 1 6 0M9 26l-1 3M23 26l1 3"/><circle cx="22" cy="9" r="1.6"/><circle cx="26" cy="12" r="1"/></symbol>
+    <symbol id="i-grill" viewBox="0 0 32 32"><path d="M5 14h22a11 11 0 0 1-22 0z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M5 14h22a11 11 0 0 1-22 0zM11 24l-3 5M21 24l3 5M12 10c-2-2 2-3 0-6M17 10c-2-2 2-3 0-6M22 10c-2-2 2-3 0-6"/></symbol>
+    <symbol id="i-pot" viewBox="0 0 32 32"><path d="M7 15h18c0 7-3 10-9 10s-9-3-9-10z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M7 15h18c0 7-3 10-9 10s-9-3-9-10zM5 15h22M16 4v6M16 8 6 29M16 8l10 21M11 29h10"/></symbol>
+    <symbol id="i-highchair" viewBox="0 0 32 32"><rect x="9" y="13" width="14" height="6" rx="2" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M10 4v9M9 13h14v6H9zM10 19l-3 9M22 19l3 9M7 24h18"/></symbol>
+    <symbol id="i-fridge" viewBox="0 0 32 32"><rect x="8" y="4" width="16" height="24" rx="3" fill="#8db58f" fill-opacity=".4" stroke="none"/><rect x="8" y="4" width="16" height="24" rx="3"/><path d="M8 14h16M12 8v3M12 17v5"/></symbol>
+    <symbol id="i-micro" viewBox="0 0 32 32"><rect x="3" y="8" width="26" height="16" rx="3" fill="#8db58f" fill-opacity=".4" stroke="none"/><rect x="3" y="8" width="26" height="16" rx="3"/><path d="M20 8v16"/><circle cx="11.5" cy="16" r="3.5"/><path d="M24.5 12h.01M24.5 16h.01M24.5 20h.01"/></symbol>
+    <symbol id="i-kettle" viewBox="0 0 32 32"><path d="M8 13h13l1 14H7z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M8 13h13l1 14H7zM10 13c0-4 2-7 4.5-7S19 9 19 13M21 16l6-4M7 16c-4 0-4 7 0 7"/></symbol>
+    <symbol id="i-toaster" viewBox="0 0 32 32"><rect x="4" y="13" width="24" height="13" rx="4" fill="#8db58f" fill-opacity=".4" stroke="none"/><rect x="4" y="13" width="24" height="13" rx="4"/><path d="M9 13V8h5v5M18 13V8h5v5M25 20h-3"/></symbol>
+    <symbol id="i-coffee" viewBox="0 0 32 32"><path d="M6 15h16v7a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M6 15h16v7a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6zM22 17h2a3 3 0 0 1 0 6h-2M10 4c-2 2 2 3 0 6M15 4c-2 2 2 3 0 6"/></symbol>
+    <symbol id="i-washer" viewBox="0 0 32 32"><rect x="5" y="4" width="22" height="24" rx="3" fill="#8db58f" fill-opacity=".4" stroke="none"/><rect x="5" y="4" width="22" height="24" rx="3"/><path d="M5 10h22M9 7h.01M13 7h.01"/><circle cx="16" cy="19" r="6"/><path d="M12 19c2-2 3 2 8 0"/></symbol>
+    <symbol id="i-dryer" viewBox="0 0 32 32"><path d="M4 8h15a5.5 5.5 0 0 1 0 11H4z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M4 8h15a5.5 5.5 0 0 1 0 11H4zM12 19l-2 10h5l2-10M26 9l3-1M26 13.5h3M26 18l3 1"/></symbol>
+    <symbol id="i-sink" viewBox="0 0 32 32"><path d="M3 17h12v3a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5zM17 17h12v3a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M3 17h12v3a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5zM17 17h12v3a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5zM9 17V9h4M23 17V9h-4"/></symbol>
+    <symbol id="i-wc" viewBox="0 0 32 32"><rect x="10" y="4" width="12" height="8" rx="2" fill="#8db58f" fill-opacity=".45" stroke="none"/><rect x="10" y="4" width="12" height="8" rx="2"/><path d="M7 15h18c0 6-3 10-9 10s-9-4-9-10zM12 25l-1 4h10l-1-4"/></symbol>
+    <symbol id="i-bottle" viewBox="0 0 32 32"><rect x="9" y="12" width="14" height="16" rx="4" fill="#8db58f" fill-opacity=".45" stroke="none"/><rect x="9" y="12" width="14" height="16" rx="4"/><path d="M13 12V8h6v4M16 8V4h5M9 19h14"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 32 32"><circle cx="16" cy="25" r="2.5" fill="#8db58f" fill-opacity=".6" stroke="none"/><path d="M4 13a17 17 0 0 1 24 0M8 17.5a11 11 0 0 1 16 0M12 22a5 5 0 0 1 8 0"/><circle cx="16" cy="25" r="1.2"/></symbol>
+    <symbol id="i-parking" viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="24" rx="7" fill="#8db58f" fill-opacity=".4" stroke="none"/><rect x="4" y="4" width="24" height="24" rx="7"/><path d="M12 23V9h5a4.5 4.5 0 0 1 0 9h-5"/></symbol>
+    <symbol id="i-sofa" viewBox="0 0 32 32"><path d="M3 18a3 3 0 0 1 6 0v3h14v-3a3 3 0 0 1 6 0v7H3z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M7 15v-3a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v3M3 18a3 3 0 0 1 6 0v3h14v-3a3 3 0 0 1 6 0v7H3zM7 25v3M25 25v3"/></symbol>
+    <symbol id="i-door" viewBox="0 0 32 32"><rect x="8" y="3" width="16" height="26" rx="2" fill="#8db58f" fill-opacity=".4" stroke="none"/><rect x="8" y="3" width="16" height="26" rx="2"/><path d="M4 29h24"/><circle cx="20" cy="17" r="1.3"/></symbol>
+    <symbol id="i-tree" viewBox="0 0 32 32"><circle cx="16" cy="12" r="8" fill="#8db58f" fill-opacity=".45" stroke="none"/><circle cx="16" cy="12" r="8"/><path d="M16 20v9M11 29h10M16 24l-4-4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="#8db58f" fill-opacity=".4" stroke="none"/><circle cx="16" cy="16" r="12"/><path d="M16 9v7l5 3"/></symbol>
+    <symbol id="i-key" viewBox="0 0 32 32"><circle cx="11" cy="16" r="6" fill="#8db58f" fill-opacity=".45" stroke="none"/><circle cx="11" cy="16" r="6"/><path d="M17 16h12M25 16v5M21 16v3"/></symbol>
+    <symbol id="i-paw" viewBox="0 0 32 32"><path d="M16 17c-5 0-8 4-8 7 0 2 2 3 4 3 2 0 2-1 4-1s2 1 4 1c2 0 4-1 4-3 0-3-3-7-8-7z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M16 17c-5 0-8 4-8 7 0 2 2 3 4 3 2 0 2-1 4-1s2 1 4 1c2 0 4-1 4-3 0-3-3-7-8-7z"/><circle cx="7.5" cy="13" r="2.3"/><circle cx="12.5" cy="8" r="2.3"/><circle cx="19.5" cy="8" r="2.3"/><circle cx="24.5" cy="13" r="2.3"/></symbol>
+    <symbol id="i-nosmoke" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="#8db58f" fill-opacity=".4" stroke="none"/><circle cx="16" cy="16" r="12"/><path d="M7.5 24.5l17-17M10 19h9M23 19v2"/></symbol>
+    <symbol id="i-cup" viewBox="0 0 32 32"><path d="M5 12h18v7a7 7 0 0 1-7 7h-4a7 7 0 0 1-7-7z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M5 12h18v7a7 7 0 0 1-7 7h-4a7 7 0 0 1-7-7zM23 14h1.5a3.5 3.5 0 0 1 0 7H22M8 29h12"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 32 32"><rect x="4" y="7" width="24" height="21" rx="3" fill="#8db58f" fill-opacity=".4" stroke="none"/><rect x="4" y="7" width="24" height="21" rx="3"/><path d="M4 14h24M10 4v6M22 4v6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="#8db58f" fill-opacity=".4" stroke="none"/><circle cx="16" cy="16" r="12"/><path d="m10.5 16.5 4 4 7-8.5"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 32 32"><path d="M6 26C6 13 14 6 27 5c0 13-6 21-18 21z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M6 26C6 13 14 6 27 5c0 13-6 21-18 21zM6 26l12-12"/></symbol>
+    <symbol id="i-wine" viewBox="0 0 32 32"><path d="M10 4h12l-1.5 9a4.5 4.5 0 0 1-9 0z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M10 4h12l-1.5 9a4.5 4.5 0 0 1-9 0zM16 17.5V27m-5 2h10"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 32 32"><path d="M2 27 11 11l6 10 4-6 9 12z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M2 27 11 11l6 10 4-6 9 12z"/></symbol>
+    <symbol id="i-car" viewBox="0 0 32 32"><path d="M4 21v-5l3-6h18l3 6v5z" fill="#8db58f" fill-opacity=".45" stroke="none"/><path d="M4 21v-5l3-6h18l3 6v5zM4 16h24M4 21v3h4v-3M24 21v3h4v-3"/><circle cx="9.5" cy="18.5" r=".8"/><circle cx="22.5" cy="18.5" r=".8"/></symbol>
+    <symbol id="i-info" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="#8db58f" fill-opacity=".4" stroke="none"/><circle cx="16" cy="16" r="12"/><path d="M16 15v7M16 10.5v.01"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 32 32"><path d="M5 7h22v15H15l-6 5v-5H5z" fill="#8db58f" fill-opacity=".4" stroke="none"/><path d="M5 7h22v15H15l-6 5v-5H5zM11 13h10M11 17h6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Csillag Fogadó – kezdőlap">
+      <img src="../img/logo.svg" alt="" width="52" height="33">
+      <span class="brand-name">Csillag Fogadó<small>Erdőbénye · Tokaj-Hegyalja</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menü megnyitása"><span></span></button>
+    <nav class="nav" id="main-nav" aria-label="Főmenü">
+      <a href="../#szobak" class="is-active" aria-current="page">Szobáink</a>
+      <a href="../#latnivalok">Látnivalók</a>
+      <a href="/borkostolas/">Borkóstolás</a>
+      <a href="../#rolunk">Rólunk</a>
+      <a href="../#kapcsolat">Kapcsolat</a>
+      <a class="btn" href="https://booking.godirect.website/csillag-fogado" target="_blank" rel="noopener">Foglalás</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- CÍM + GALÉRIA -->
+  <section class="room-top" aria-labelledby="room-title">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Morzsamenü">
+        <a href="../">Főoldal</a><span aria-hidden="true">/</span><a href="../#szobak">Szobáink</a><span aria-hidden="true">/</span><span aria-current="page">Szoba 1</span>
+      </nav>
+
+      <div class="room-titlebar">
+        <div>
+          <p class="room-eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-tree"/></svg>Kertre néz · Erdőbénye</p>
+          <h1 id="room-title">Szoba 1</h1>
+        </div>
+      </div>
+
+      <!-- MINTA: a fotók cserélendők a szoba saját képeire -->
+      <div class="gallery" id="gallery">
+        <a class="g-item g-main" href="../img/room.jpg" data-lb data-alt="Szoba 1 – nappali-étkező (mintakép)">
+          <img src="../img/room.jpg" alt="Szoba 1 – világos nappali-étkező (mintakép)" width="700" height="467">
+        </a>
+        <a class="g-item" href="../img/hero.jpg" data-lb data-alt="A ház és a kert (mintakép)">
+          <img src="../img/hero.jpg" alt="A ház a kerttel (mintakép)" width="946" height="533" loading="lazy" style="object-position:38% 50%">
+        </a>
+        <a class="g-item" href="../img/about.jpg" data-lb data-alt="Kilátás a szőlőhegyre (mintakép)">
+          <img src="../img/about.jpg" alt="Kilátás Erdőbényére (mintakép)" width="600" height="400" loading="lazy">
+        </a>
+        <a class="g-item" href="../img/room.jpg" data-lb data-alt="Hálószoba (mintakép)">
+          <img src="../img/room.jpg" alt="Hálószoba (mintakép)" width="700" height="467" loading="lazy" style="object-position:85% 50%">
+        </a>
+        <a class="g-item" href="../img/sight.jpg" data-lb data-alt="A környék (mintakép)">
+          <img src="../img/sight.jpg" alt="A környék látnivalói (mintakép)" width="946" height="710" loading="lazy">
+          <span class="g-all"><svg class="ic" aria-hidden="true"><use href="#i-grid"/></svg>Összes fotó (5)</span>
+        </a>
+        <span class="g-counter" id="g-counter" aria-hidden="true">1 / 5</span>
+      </div>
+
+      <div class="room-intro">
+        <p class="room-sub">Önálló, 85 m²-es apartman két hálószobával – családoknak és kisebb társaságoknak.</p>
+        <ul class="quick-facts" aria-label="Röviden">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-area"/></svg><strong>85 m²</strong><span>önálló apartman</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-bed"/></svg><strong>2</strong><span>hálószoba</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-people"/></svg><strong>max. 4 fő</strong><span>vendég</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-shower"/></svg><strong>Saját</strong><span>fürdőszoba</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARTALOM + FIX SIDEBAR -->
+  <div class="room-body-wrap">
+    <div class="wrap room-layout">
+
+      <div class="room-content">
+
+        <!-- LEÍRÁS -->
+        <section class="card" aria-labelledby="d-leiras">
+          <header class="card-head">
+            <span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg></span>
+            <div><span class="kicker">A szobáról</span><h2 id="d-leiras">Egy kis otthon a borvidéken</h2></div>
+          </header>
+          <div class="prose">
+            <p class="lead">Előszoba, nappali-étkező, két hálószoba és saját fürdőszoba – a Szoba 1 valójában egy teljes, önálló apartman, ahol egy hosszú hétvégén és egy egész hetes pihenés alatt is igazán otthon érezheti magát.</p>
+            <p>A világos nappali-étkezőben megterítheti a reggelit, megfőzheti a kávét, este pedig együtt pihenhet a család vagy a baráti társaság. A hálószobák csendesek, a kert felé néznek – reggel madárcsicsergés ébreszt, nem forgalom.</p>
+            <p>A fürdőszobában dupla mosdó, zuhanykabin és mosó-szárítógép vár, a különálló WC a nappaliból nyílik. Főzni az udvari konyhában, grillen vagy bográcsban is lehet – a legkisebbeknek pedig gyerekágy, fürdetőkád és etetőszék áll rendelkezésére.</p>
+          </div>
+        </section>
+
+        <!-- ALAPRAJZ -->
+        <section class="card" aria-labelledby="d-terek">
+          <header class="card-head">
+            <div><span class="kicker">Alaprajz</span><h2 id="d-terek">Hol alszik, hol étkezik</h2></div>
+          </header>
+          <!-- MINTA: az ágytípusok a tulajdonossal pontosítandók -->
+          <ul class="spaces">
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-door"/></svg></span><div><strong>Előszoba</strong><span>kényelmes hely a csomagoknak</span></div></li>
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-sofa"/></svg></span><div><strong>Nappali-étkező</strong><span>étkezőasztal, hűtő, kávéfőző</span></div></li>
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-bed"/></svg></span><div><strong>1. hálószoba</strong><span>franciaágy</span></div></li>
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-bed"/></svg></span><div><strong>2. hálószoba</strong><span>két külön ágy</span></div></li>
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-shower"/></svg></span><div><strong>Fürdőszoba</strong><span>zuhanykabin, dupla mosdó</span></div></li>
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-wc"/></svg></span><div><strong>Külön WC</strong><span>a nappaliból nyílik</span></div></li>
+          </ul>
+        </section>
+
+        <!-- FELSZERELTSÉG -->
+        <section class="card" id="felszereltseg" aria-labelledby="d-felszereltseg">
+          <header class="card-head">
+            <div><span class="kicker">Felszereltség</span><h2 id="d-felszereltseg">Amit mindenképp megtalál</h2></div>
+          </header>
+
+          <div class="amen-group">
+            <h3>Gyerekeknek</h3>
+            <ul class="amen">
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-crib"/></svg></span>Gyerekágy</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-tub"/></svg></span>Fürdetőkád</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-highchair"/></svg></span>Etetőszék</li>
+            </ul>
+          </div>
+          <div class="amen-group">
+            <h3>Étkező és konyha</h3>
+            <ul class="amen">
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-fridge"/></svg></span>Hűtő</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-micro"/></svg></span>Mikrohullámú sütő</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-kettle"/></svg></span>Vízforraló</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-toaster"/></svg></span>Kenyérpirító</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-coffee"/></svg></span>Kávéfőző</li>
+            </ul>
+          </div>
+          <div class="amen-group">
+            <h3>Fürdőszoba</h3>
+            <ul class="amen">
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-shower"/></svg></span>Zuhanykabin</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-sink"/></svg></span>Dupla mosdó</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-washer"/></svg></span>Mosó-szárítógép</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-dryer"/></svg></span>Hajszárító</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-bottle"/></svg></span>Sampon</li>
+            </ul>
+          </div>
+          <div class="amen-group">
+            <h3>Kint és bent</h3>
+            <ul class="amen">
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-grill"/></svg></span>Grillezés</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-pot"/></svg></span>Bográcsozás</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-wifi"/></svg></span>Ingyenes wifi</li>
+              <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-parking"/></svg></span>Ingyenes parkolás</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- TUDNIVALÓK -->
+        <section class="card" aria-labelledby="d-tudnivalok">
+          <header class="card-head">
+            <span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg></span>
+            <div><span class="kicker">Tudnivalók</span><h2 id="d-tudnivalok">Érkezés, házirend</h2></div>
+          </header>
+          <!-- MINTA: az időpontok és szabályok a tulajdonossal pontosítandók -->
+          <ul class="rules">
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-key"/></svg></span><div><strong>Érkezés</strong><span>14:00 órától</span></div></li>
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg></span><div><strong>Távozás</strong><span>10:00 óráig</span></div></li>
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-paw"/></svg></span><div><strong>Kisállat</strong><span>előzetes egyeztetés után</span></div></li>
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-nosmoke"/></svg></span><div><strong>Dohányzás</strong><span>az apartmanban tilos</span></div></li>
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-cup"/></svg></span><div><strong>Reggeli</strong><span>kérésre, helyi termékekből</span></div></li>
+            <li><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg></span><div><strong>Minimum tartózkodás</strong><span>hétvégén 2 éjszaka</span></div></li>
+          </ul>
+        </section>
+
+        <!-- GYIK -->
+        <section class="card" aria-labelledby="d-gyik">
+          <header class="card-head">
+            <span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></span>
+            <div><span class="kicker">Gyakori kérdések</span><h2 id="d-gyik">Mielőtt foglal</h2></div>
+          </header>
+          <div class="faq-list">
+            <details open>
+              <summary>Gyerekbarát-e a szállás?</summary>
+              <p>Igen, a családokat szeretettel várjuk. Gyerekágy, fürdetőkád és etetőszék is rendelkezésre áll, a kertben a gyerekek biztonságosan játszhatnak.</p>
+            </details>
+            <details>
+              <summary>Hol lehet főzni?</summary>
+              <p>A nappali-étkezőben hűtő, mikrohullámú sütő, vízforraló, kenyérpirító és kávéfőző van; a főzésre az udvari konyha szolgál. Grillezésre és bográcsozásra is van lehetőség.</p>
+            </details>
+            <details>
+              <summary>Hozhatok-e magammal kisállatot?</summary>
+              <p>Kisállatot előzetes egyeztetés után fogadunk. Kérjük, foglalás előtt vegye fel velünk a kapcsolatot.</p>
+            </details>
+            <details>
+              <summary>Ingyenes a parkolás?</summary>
+              <p>Igen, a vendégek autói számára ingyenes parkolási lehetőséget biztosítunk a szállás mellett.</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- KÖRNYÉK -->
+        <section class="card card--dark" aria-labelledby="d-kornyek">
+          <svg class="topo" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <path d="M-20 200 C 200 140 380 260 600 180 S 960 80 1240 160"/>
+            <path d="M-20 240 C 200 180 380 300 600 220 S 960 120 1240 200"/>
+            <path d="M-20 280 C 200 220 380 340 600 260 S 960 160 1240 240"/>
+            <path d="M-20 560 C 260 500 420 640 700 560 S 1040 470 1240 540"/>
+          </svg>
+          <header class="card-head">
+            <span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-mountain"/></svg></span>
+            <div><span class="kicker">A környék</span><h2 id="d-kornyek">Pincék, erdők, csend</h2></div>
+          </header>
+          <p class="card-lead">Erdőbénye a tokaji borvidék egyik legrégebbi települése: a pincék gyalog is elérhetők, a Zempléni-hegység túraútvonalai pedig a közelben kezdődnek.</p>
+          <ul class="near">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-wine"/></svg><span>Tokaj</span><strong>~10 km</strong></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg><span>Budapest (autóval)</span><strong>~2 óra</strong></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-mountain"/></svg><span>Zempléni-hegység</span><strong>a közelben</strong></li>
+          </ul>
+          <a class="btn btn--light" href="../#latnivalok">Látnivalók a környéken <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </section>
+
+      </div>
+
+      <!-- FIX SIDEBAR (mobilon a tartalom után; helyette ragadós sáv) -->
+      <aside class="booking" id="foglalas" aria-label="Foglalás">
+        <div class="booking-card">
+          <p class="booking-price"><strong>26 000 Ft</strong><span>/ fő / éjtől</span></p>
+
+          <form class="booking-form" id="booking-form" action="https://booking.godirect.website/csillag-fogado" method="get" target="_blank">
+            <div class="b-dates">
+              <label class="b-field" for="checkin"><span>Érkezés</span><input type="date" id="checkin" name="checkin" required></label>
+              <label class="b-field" for="checkout"><span>Távozás</span><input type="date" id="checkout" name="checkout" required></label>
+            </div>
+            <label class="b-field" for="guests"><span>Vendégek</span>
+              <select id="guests" name="guests">
+                <option value="1">1 fő</option>
+                <option value="2" selected>2 fő</option>
+                <option value="3">3 fő</option>
+                <option value="4">4 fő</option>
+              </select>
+            </label>
+            <button class="btn" type="submit">Foglalás</button>
+          </form>
+
+          <dl class="b-sum" aria-live="polite">
+            <div><dt id="b-calc">26 000 Ft × 2 fő × 2 éj</dt><dd id="b-sub">104 000 Ft</dd></div>
+            <div class="b-total"><dt>Összesen</dt><dd id="b-total">104 000 Ft</dd></div>
+          </dl>
+          <p class="b-note">Tájékoztató összeg – a végleges árat a foglalási oldalon látja.</p>
+        </div>
+
+        <div class="booking-help">
+          <span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></span>
+          <div>
+            <strong>Kérdése van?</strong>
+            <a href="tel:+3617011886">+36 1 701 1886</a>
+            <a href="mailto:info@csillagfogado.hu">info@csillagfogado.hu</a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- TÖBBI SZOBA -->
+  <section class="section more-rooms" aria-labelledby="more-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="more-title" style="font-size:var(--step-3)">További szobáink</h2>
+      </div>
+      <div class="room-grid more-grid">
+        <article class="room">
+          <div class="room-img">
+            <img src="../img/room.jpg" alt="Szoba 2 – mintakép" width="700" height="467" loading="lazy" style="object-position:85% 50%">
+            <span class="room-tag">Családi</span>
+          </div>
+          <div class="room-body">
+            <h3>Szoba 2</h3>
+            <p>Tágas családi szoba pótágyazási lehetőséggel, a gyerekeknek is jut hely bőven.</p>
+            <div class="room-foot">
+              <p class="price"><strong>26 000 Ft</strong><span>/ fő / éjtől</span></p>
+              <a class="btn" href="/szoba-2/">Részletek</a>
+            </div>
+          </div>
+        </article>
+        <article class="room">
+          <div class="room-img">
+            <img src="../img/room.jpg" alt="Szoba 3 – mintakép" width="700" height="467" loading="lazy" style="object-position:20% 80%">
+            <span class="room-tag">Hegyi kilátás</span>
+          </div>
+          <div class="room-body">
+            <h3>Szoba 3</h3>
+            <p>Csendes, emeleti szoba kilátással a szőlőhegyekre – reggeli kávéhoz a legjobb hely.</p>
+            <div class="room-foot">
+              <p class="price"><strong>26 000 Ft</strong><span>/ fő / éjtől</span></p>
+              <a class="btn" href="/szoba-3/">Részletek</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand">
+      <a class="brand" href="../">
+        <img src="../img/logo.svg" alt="" width="52" height="33">
+        <span class="brand-name">Csillag Fogadó<small>Erdőbénye · Tokaj-Hegyalja</small></span>
+      </a>
+      <p>Családias panzió néhány szobával, a Zempléni-hegység és a tokaji pincék között.</p>
+    </div>
+    <div>
+      <h3>Oldalak</h3>
+      <ul>
+        <li><a href="../#szobak">Szobáink</a></li>
+        <li><a href="../#latnivalok">Látnivalók</a></li>
+        <li><a href="/borkostolas/">Borkóstolás</a></li>
+        <li><a href="../#rolunk">Rólunk</a></li>
+        <li><a href="/journal/">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Elérhetőség</h3>
+      <ul>
+        <li>3932 Erdőbénye, Kossuth út 29.</li>
+        <li><a href="tel:+3617011886">+36 1 701 1886</a></li>
+        <li><a href="mailto:info@csillagfogado.hu">info@csillagfogado.hu</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Csillag Fogadó</span>
+      <span>Adatkezelési tájékoztató · ÁSZF</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobil: ragadós foglalási sáv -->
+<div class="mobile-cta is-visible" id="mobile-cta">
+  <p class="price"><strong>26 000 Ft</strong><span>/ fő / éjtől</span></p>
+  <a class="btn" href="#foglalas">Foglalás</a>
+</div>
+
+<!-- Galéria nagyítás -->
+<dialog class="lightbox" id="lightbox" aria-label="Fotógaléria">
+  <button class="lb-close" type="button" aria-label="Bezárás"><svg class="ic" aria-hidden="true"><use href="#i-close"/></svg></button>
+  <button class="lb-nav lb-prev" type="button" aria-label="Előző fotó"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+  <button class="lb-nav lb-next" type="button" aria-label="Következő fotó"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+</dialog>
+
+<script src="../js/main.js"></script>
+<script src="../js/room.js"></script>
+</body>
+</html>
