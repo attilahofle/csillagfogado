@@ -1,7 +1,6 @@
 /* =========================================================
    Szobaoldal (/szoba-1/) – a style.css design systemére épül
    ========================================================= */
-.ic { width: 24px; height: 24px; flex: none; stroke: var(--forest); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 
 /* ---------- Cím, morzsamenü ---------- */
 .room-top { padding-block: clamp(20px, 3vw, 36px) clamp(28px, 4vw, 48px); }
@@ -140,19 +139,23 @@
 .card--dark h2 { color: #fff; }
 .card--dark .kicker { color: var(--moss); }
 .card--dark .card-icon { background: rgba(255, 255, 255, .1); box-shadow: none; }
-.card--dark .card-icon .ic { stroke: #fff; }
+.card--dark .card-icon .ic { color: #fff; }
 .card-lead { color: #c8d8c7; max-width: 38rem; }
 .near { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid rgba(255, 255, 255, .16); }
 .near li { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid rgba(255, 255, 255, .16); }
-.near .ic { stroke: var(--moss); width: 28px; height: 28px; }
+.near .ic { color: var(--moss); width: 28px; height: 28px; }
 .near span { flex: 1; }
 .near strong { font-weight: 600; color: #fff; white-space: nowrap; }
 .btn--light { --bg: #fff; --fg: var(--forest-deep); color: var(--forest-deep); justify-self: start; }
 .btn--light:hover { --bg: var(--moss); color: var(--forest-deep); }
-.btn--light .ic { stroke: currentColor; width: 1.1em; height: 1.1em; stroke-width: 2; }
+.btn--light .ic { width: 1.1em; height: 1.1em; }
 
 /* GYIK a kártyán belül */
-.card .faq-list details { background: #f6faf3; border: 0; }
+.card .faq-list { gap: 0; }
+.card .faq-list details { background: transparent; border: 0; border-bottom: 1px solid rgba(1, 71, 46, .08); border-radius: 0; }
+.card .faq-list details:last-child { border-bottom: 0; }
+.card .faq-list summary { padding-block: 12px; }
+.card .faq-list details p { padding-bottom: 12px; }
 
 /* ---------- Foglalási doboz ---------- */
 .booking-card {
@@ -207,7 +210,7 @@
 .lb-close:hover, .lb-nav:hover { background: rgba(255, 255, 255, .22); }
 .lb-close { position: absolute; top: 16px; right: 16px; z-index: 2; }
 .lb-prev .ic { transform: rotate(180deg); }
-.lightbox .ic { stroke: #fff; width: 22px; height: 22px; stroke-width: 2; }
+.lightbox .ic { color: #fff; width: 22px; height: 22px; }
 @media (max-width: 620px) {
   .lightbox[open] { grid-template-columns: 1fr; align-content: center; }
   .lb-nav { position: absolute; bottom: 20px; }
