@@ -1,0 +1,60 @@
+/* =========================================================
+   ARCHÍV – nem választott "B irány: Agyag" előnézet (terrakotta akcent)
+   Az A irányra (Vászon és fa) épül, és visszafogott terrakotta
+   akcentust ad hozzá. A fő gombok és a sötét blokkok zöldek maradnak.
+   Betöltés: a style.css (és az oldal saját CSS-e) UTÁN.
+   ========================================================= */
+/* (az A irány már a style.css-ben van, az @import kikerült) */
+
+:root {
+  --paper: #fbf4ea;
+  --paper-2: #f3e6d6;        /* agyagosabb homok */
+  --card: #fffbf6;
+  --line: #e8d6c0;
+  --ink-soft: #5a4a3e;       /* melegebb barna */
+  --terra: #c4724a;          /* dísz-akcent (ikonok, jelek) */
+  --terra-text: #a8532e;     /* kis szöveghez, ~4,9:1 kontraszt krémen */
+  --terra-tint: rgba(196, 114, 74, .14);
+  --timber-text: var(--terra-text);
+}
+
+/* Ikonok halvány rétege: terrakotta */
+.ph-d { fill: #d98a62; opacity: .5; }
+
+/* Kis feliratok, jelzők */
+.sight-kicker, .room-eyebrow, .kicker, .callout strong, .entry-kicker, .banner-kicker { color: var(--terra-text); }
+.room-eyebrow .ic { color: var(--terra-text); }
+.stars { color: var(--terra); }
+.room-tag { color: var(--terra-text); }
+.price span, .booking-price span { color: var(--ink-soft); }
+
+/* Navigáció: terrakotta árnyalatú aktív/hover állapot */
+.nav a:not(.btn):hover, .nav a:not(.btn).is-active { background: var(--terra-tint); }
+@media (max-width: 900px) { .nav { background: #f3e6d6; } }
+.site-header .wrap { background: rgba(255, 249, 240, .62); border-color: rgba(168, 83, 46, .2); }
+
+/* Főoldali pontok: apró terrakotta jelek */
+.coords span::before { background: var(--terra); }
+.facts strong { color: var(--forest); }
+
+/* Kiemelő blokk (Látnivalók) */
+.callout { background: var(--terra-tint); }
+.callout-icon { background: rgba(196, 114, 74, .22); }
+.callout-icon .ic { color: var(--terra-text); }
+.entry-tags li { border-color: #dcc3a8; }
+
+/* Tartalomjegyzék */
+.toc { background: var(--paper-2); border-color: var(--line); }
+.toc a:hover { background: var(--terra-tint); }
+.toc a.is-active { background: rgba(196, 114, 74, .2); color: var(--forest); }
+
+/* Szobaoldal */
+.amen li:hover .tile { background: #ecd7bf; }
+.card-icon { box-shadow: inset 0 0 0 1px rgba(168, 83, 46, .14); }
+.quick-facts .ic { background: var(--paper-2); }
+
+/* Sötét blokkok: mohazöld helyett méz/terrakotta kiemelés */
+.card--dark .kicker, .banner-kicker { color: #e3b778; }
+.near .ic, .contact-list svg { color: #e3b778; }
+.site-footer a:hover { color: #e3b778; }
+.btn--light:hover, .location .btn:hover { --bg: #e3b778; }

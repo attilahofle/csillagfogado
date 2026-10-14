@@ -11,7 +11,7 @@
 
 .room-titlebar { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px 40px; margin-bottom: clamp(20px, 3vw, 32px); }
 .room-titlebar > div:first-child { display: grid; gap: 10px; min-width: 0; max-width: 40rem; }
-.room-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--timber); }
+.room-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--timber-text); }
 .room-eyebrow .ic { width: 22px; height: 22px; }
 .room-titlebar h1 { font-size: var(--step-4); letter-spacing: -.01em; }
 .room-intro { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; margin-top: clamp(18px, 2.5vw, 28px); }
@@ -22,7 +22,7 @@
   display: grid; grid-template-columns: auto 1fr; column-gap: 8px; align-items: center;
   padding: 8px 18px 8px 0;
 }
-.quick-facts .ic { grid-row: 1 / 3; width: 28px; height: 28px; padding: 8px; box-sizing: content-box; border-radius: 50%; background: var(--paper-2); }
+.quick-facts .ic { grid-row: 1 / 3; width: 28px; height: 28px; padding: 8px; box-sizing: content-box; border-radius: 50%; background: var(--sand); }
 .quick-facts strong { font-weight: 600; font-size: 1.02rem; line-height: 1.15; }
 .quick-facts span { font-size: .78rem; color: var(--ink-soft); line-height: 1.2; }
 
@@ -33,7 +33,7 @@
   gap: 10px; height: clamp(300px, 42vw, 500px);
   border-radius: calc(var(--radius) + 6px); overflow: hidden;
 }
-.g-item { position: relative; display: block; overflow: hidden; background: var(--paper-2); }
+.g-item { position: relative; display: block; overflow: hidden; background: var(--sand); }
 .g-main { grid-row: 1 / 3; }
 .g-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
 .g-item:hover img { transform: scale(1.05); }
@@ -87,8 +87,8 @@
 .card-head { display: flex; align-items: center; gap: 16px; }
 .card-head > div { display: grid; gap: 4px; min-width: 0; }
 .card-head h2 { font-size: var(--step-2); }
-.kicker { font-size: .74rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--timber); }
-.card-icon { flex: none; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 18px; background: var(--paper-2); box-shadow: inset 0 0 0 1px rgba(1, 71, 46, .08); }
+.kicker { font-size: .74rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--timber-text); }
+.card-icon { flex: none; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 18px; background: var(--sand); box-shadow: inset 0 0 0 1px rgba(143, 95, 46, .12); }
 .card-icon .ic { width: 30px; height: 30px; }
 
 .prose { display: grid; gap: 16px; max-width: 40rem; }
@@ -96,7 +96,7 @@
 .prose .lead { color: var(--ink); font-size: 1.25rem; line-height: 1.5; }
 
 /* Ikoncsempe */
-.tile { flex: none; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; background: var(--paper-2); transition: background .25s, transform .25s; }
+.tile { flex: none; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; background: var(--sand); transition: background .25s, transform .25s; }
 .tile .ic { width: 30px; height: 30px; }
 
 /* Alaprajz */
@@ -112,7 +112,7 @@
 .amen-group h3 { font-family: var(--body); font-size: .76rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); }
 .amen { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px 16px; }
 .amen li { display: flex; align-items: center; gap: 14px; font-weight: 500; line-height: 1.25; }
-.amen li:hover .tile { background: #dbe8d4; transform: translateY(-2px); }
+.amen li:hover .tile { background: #e8dcc4; transform: translateY(-2px); }
 
 /* Házirend */
 .rules { list-style: none; margin: 0; padding: 0; display: grid; }
