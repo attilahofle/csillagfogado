@@ -335,10 +335,8 @@ p { margin: 0; font-size: 18px; line-height: 1.5; }
   flex-direction: column;
   transition: transform .3s, box-shadow .3s;
 }
-.room:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .room-img { position: relative; aspect-ratio: 4 / 3; overflow: hidden; }
 .room-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
-.room:hover .room-img img { transform: scale(1.05); }
 .room-tag {
   position: absolute; top: 14px; left: 14px;
   background: rgba(255, 255, 255, .94);
@@ -348,13 +346,15 @@ p { margin: 0; font-size: 18px; line-height: 1.5; }
 }
 .room-body { padding: 22px 22px 24px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
 .room-body h3 { font-size: var(--step-2); }
+.room-img a { display: block; width: 100%; height: 100%; }
+.room-body h3 a { color: inherit; text-decoration: none; }
 .room-body p { color: var(--ink-soft); }
 .room-meta { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .room-meta li { font-size: .82rem; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink-soft); }
-.room-foot { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.room-foot { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line); display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .price { font-variant-numeric: tabular-nums; }
 .price strong { font-family: var(--display); font-weight: 400; font-size: 1.5rem; color: var(--ink); }
-.price span { display: block; font-size: .8rem; color: var(--ink-soft); }
+.price span { margin-left: .35em; font-size: .8rem; color: var(--ink-soft); }
 .room-foot .btn { padding: .75em 1.2em; }
 
 /* ---------- Itt találsz meg minket ---------- */

@@ -24,6 +24,15 @@
     if (e.key === 'Escape') setNav(false);
   });
 
+  /* --- Logó: görgetés az oldal tetejére, #top hash nélkül az URL-ben --- */
+  document.querySelectorAll('a[href="#top"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+    });
+  });
+
   /* --- Fejléc árnyék + mobil foglalás gomb görgetéskor --- */
   var cta = document.getElementById('mobile-cta');
   var hero = document.querySelector('.hero');
