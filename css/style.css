@@ -9,11 +9,11 @@
 :root {
   /* Szín */
   --paper: #fffdf8;         /* oldal alap – meleg, világos törtfehér */
-  --paper-2: #f2e5d04f;    /* szekció váltó tónus (áttetsző homok) */
+  --paper-2: #edd9b94f;   /* szekció váltó tónus (áttetsző homok) */
   --sand: #f2e6d3;         /* tömör homok: csempék, kis felületek, jelölők */
   --card: #fffefb;
   --ink: #01472e;          /* szöveg – mély erdő */
-  --ink-soft: #5c5446;
+  --ink-soft: #444;
   --line: #e4d8c3;
   --forest: #01472e;       /* márkaszín */
   --forest-deep: #164d2a;
@@ -21,7 +21,7 @@
   --leaf: #009200;         /* a logó saját zöldje, csak apró jelekhez */
   --timber: #a8743f;       /* A-ház faszín, dísz-kiemelés */
   --timber-text: #8f5f2e;  /* kis szöveghez: ~5:1 kontraszt krémen */
-  --icon: #3b6b50;         /* ikonok színe csempéken: lágyabb, mint a --forest */
+  --icon: #01472e;        /* ikonok színe csempéken: lágyabb, mint a --forest */
   --honey: #e3b778;        /* ikonok halvány rétege */
   --berry: #d70000;        /* a logó piros pontja – csak a logóban */
 

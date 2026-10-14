@@ -111,7 +111,7 @@
 
 /* ---------- Második finomítás ---------- */
 /* Tartalomjegyzék: paper-2 háttér */
-.toc { background: var(--sand); color: var(--ink); box-shadow: none; border: 1px solid var(--line); }
+.toc { background: #dce0d514; color: var(--ink); box-shadow: none; border: 1px solid #dde4dd; }
 .toc-title { color: #164d2a; margin-bottom: 20px; }
 .toc a { color: var(--ink-soft); }
 .toc a:hover { color: var(--forest); background: rgba(1, 71, 46, .07); }
