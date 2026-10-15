@@ -9,7 +9,7 @@
 :root {
   /* Szín */
   --paper: #fffdf8;         /* oldal alap – meleg, világos törtfehér */
-  --paper-2: #edd9b94f;   /* szekció váltó tónus (áttetsző homok) */
+  --paper-2: #e9d8b54a;   /* szekció váltó tónus (áttetsző homok) */
   --sand: #f2e6d3;         /* tömör homok: csempék, kis felületek, jelölők */
   --card: #fffefb;
   --ink: #01472e;          /* szöveg – mély erdő */
@@ -96,6 +96,11 @@ p { margin: 0; font-size: 18px; line-height: 1.5; }
 .section { padding-block: clamp(64px, 9vw, 120px); }
 .section-head { display: grid; gap: 14px; max-width: 46rem; margin-bottom: clamp(32px, 5vw, 56px); }
 .section-head p { color: var(--ink-soft); }
+@media (min-width: 701px) {
+  .section-head { max-width: none; }
+  .section-head h2 { white-space: nowrap; }
+  .section-head p { max-width: 40rem; }
+}
 
 /* ---------- Gombok ---------- */
 .btn {
@@ -217,7 +222,6 @@ p { margin: 0; font-size: 18px; line-height: 1.5; }
 .hero .wrap { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
 .hero-copy { display: grid; gap: 22px; min-width: 0; position: relative; z-index: 2; }
 .hero h1 { font-size: var(--step-4); letter-spacing: -.01em; }
-.hero h1 em { font-style: normal; color: var(--forest); }
 .hero-lead { color: var(--ink-soft); max-width: 34rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .coords {
@@ -279,10 +283,11 @@ p { margin: 0; font-size: 18px; line-height: 1.5; }
 }
 .amenities svg {
   width: 128px; height: 128px; flex: none; padding: 30px;
-  background: var(--sand); border-radius: 50%;
+  /* szervesen formált „kavics” háttér (a szín: --sand, #f2e6d3) */
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-18 -9 119 114'%3E%3Cpath fill='%23f2e6d3' d='M0 0c31.781-22.219 100.99 5.348 96.1 41.223s-33.781 69.844-71.955 60.957S-31.8 22.2 0 0Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
   color: var(--icon);
 }
-.amenities li > span { margin-top: -24px;font-family: var(--display); font-size: 1.5rem; font-weight: 400; line-height: 1.2; color: var(--ink); }
+.amenities li > span { font-family: var(--display); font-size: 1.5rem; font-weight: 400; line-height: 1.2; color: var(--ink); }
 .amenities small { display: block; margin-top: 8px; font-family: var(--body); font-weight: 400; color: var(--ink-soft); font-size: 1.05rem; line-height: 1.4; }
 @media (max-width: 1000px) { .amenities ul { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 480px) {
@@ -320,7 +325,7 @@ p { margin: 0; font-size: 18px; line-height: 1.5; }
 /* ---------- Szobák ---------- */
 .rooms { background: var(--paper-2); }
 .rooms .section-head { grid-template-columns: 1fr auto; align-items: end; max-width: none; }
-.rooms .section-head > div { display: grid; gap: 14px; max-width: 40rem; }
+.rooms .section-head > div { display: grid; gap: 14px; }
 @media (max-width: 700px) { .rooms .section-head { grid-template-columns: 1fr; } }
 
 .room-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
@@ -476,10 +481,10 @@ p { margin: 0; font-size: 18px; line-height: 1.5; }
 
 /* ---------- GYIK ---------- */
 .faq { background: var(--paper-2); }
-.faq .wrap { display: grid; grid-template-columns: .9fr 1.4fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
+.faq .wrap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(32px, 6vw, 80px); align-items: start; }
 .faq-aside { display: grid; gap: 18px; position: sticky; top: 110px; min-width: 0; }
-.faq-aside h2 { font-size: var(--step-3); }
-.faq-aside p { color: var(--ink-soft); }
+.faq-aside h2 { font-size: var(--step-3); white-space: nowrap; }
+.faq-aside p { color: var(--ink-soft); max-width: 22rem; }
 .faq-list { display: grid; gap: 10px; min-width: 0; }
 .faq-list details { background: var(--card); border-radius: 12px; border: 1px solid var(--line); }
 .faq-list summary {
@@ -498,7 +503,7 @@ p { margin: 0; font-size: 18px; line-height: 1.5; }
 }
 .faq-list details[open] summary::after { transform: rotate(-135deg); margin-top: -2px; }
 .faq-list details p { padding: 0 22px 22px; color: var(--ink-soft); }
-@media (max-width: 860px) { .faq .wrap { grid-template-columns: 1fr; } .faq-aside { position: static; } }
+@media (max-width: 860px) { .faq .wrap { grid-template-columns: 1fr; } .faq-aside { position: static; } .faq-aside h2 { white-space: normal; } }
 
 /* ---------- Kapcsolat ---------- */
 .contact .wrap { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
