@@ -9,7 +9,7 @@
 :root {
   /* Szín */
   --paper: #fffdf8;         /* oldal alap – meleg, világos törtfehér */
-  --paper-2: #e9d8b54a;   /* szekció váltó tónus (áttetsző homok) */
+  --paper-2: #efe5d475;   /* szekció váltó tónus (áttetsző homok) */
   --sand: #f2e6d3;         /* tömör homok: csempék, kis felületek, jelölők */
   --card: #fffefb;
   --ink: #01472e;          /* szöveg – mély erdő */
@@ -94,6 +94,8 @@ p { margin: 0; font-size: 18px; line-height: 1.5; }
 }
 
 .section { padding-block: clamp(64px, 9vw, 120px); }
+/* Nyitólap, desktop: a szekciók felső térköze 24px-lel kisebb */
+@media (min-width: 1001px) { body:not([class]) .section { padding-top: calc(clamp(64px, 9vw, 120px) - 24px); } }
 .section-head { display: grid; gap: 14px; max-width: 46rem; margin-bottom: clamp(32px, 5vw, 56px); }
 .section-head p { color: var(--ink-soft); }
 @media (min-width: 701px) {
