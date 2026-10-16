@@ -1,4 +1,9 @@
-User-agent: *
-Allow: /
+# IDEIGLENES (tesztdomain): minden keresőrobot ki van zárva.
+# Élesítéskor cseréld vissza az alábbira:
+#   User-agent: *
+#   Allow: /
+#
+#   Sitemap: https://csillagfogado.hu/sitemap.xml
 
-Sitemap: https://csillagfogado.hu/sitemap.xml
+User-agent: *
+Disallow: /
