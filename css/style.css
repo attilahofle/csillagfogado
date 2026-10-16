@@ -20,7 +20,7 @@
   --moss: #8db58f;
   --leaf: #009200;         /* a logó saját zöldje, csak apró jelekhez */
   --timber: #a8743f;       /* A-ház faszín, dísz-kiemelés */
-  --timber-text: #8f5f2e;  /* kis szöveghez: ~5:1 kontraszt krémen */
+  --timber-text: #84552a;  /* kis szöveghez: >5:1 kontraszt krémen és homokon */
   --icon: #01472e;        /* ikonok színe csempéken: lágyabb, mint a --forest */
   --honey: #e3b778;        /* ikonok halvány rétege */
   --berry: #d70000;        /* a logó piros pontja – csak a logóban */
@@ -85,7 +85,9 @@ h1, h2, h3 {
 p { margin: 0; font-size: 1.125rem; line-height: 1.5; }
 @media (max-width: 600px) { p { line-height: 1.45; } }
 
-:focus-visible { outline: 3px solid var(--moss); outline-offset: 3px; border-radius: 6px; }
+:focus-visible { outline: 3px solid var(--forest); outline-offset: 3px; border-radius: 6px; box-shadow: 0 0 0 2px #fff; } /* fehér gyűrű: sötét háttéren is látszik */
+.skip-link { position: absolute; left: 12px; top: -80px; z-index: 100; padding: 10px 18px; border-radius: 8px; background: var(--forest); color: #fff; font-weight: 600; text-decoration: none; }
+.skip-link:focus { top: 12px; color: #fff; }
 
 .wrap {
   width: 100%;
@@ -526,7 +528,7 @@ p { margin: 0; font-size: 1.125rem; line-height: 1.5; }
   min-width: 0;
 }
 .field input:focus, .field select:focus { outline: none; }
-.field:focus-within { background: var(--paper); box-shadow: inset 0 0 0 2px var(--moss); }
+.field:focus-within { background: var(--paper); box-shadow: inset 0 0 0 2px var(--forest); }
 .contact-form { background: var(--card); border: 1px solid var(--line); border-radius: calc(var(--radius) + 4px); padding: clamp(18px, 3vw, 32px); display: grid; gap: 14px; min-width: 0; }
 .contact-form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .contact-form .field { border: 1.5px solid var(--line); padding: 10px 14px; }
