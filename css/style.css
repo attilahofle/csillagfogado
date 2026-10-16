@@ -82,7 +82,8 @@ h1, h2, h3 {
   text-wrap: balance;
   color: #042e1f;
 }
-p { margin: 0; font-size: 18px; line-height: 1.5; }
+p { margin: 0; font-size: 1.125rem; line-height: 1.5; }
+@media (max-width: 600px) { p { line-height: 1.45; } }
 
 :focus-visible { outline: 3px solid var(--moss); outline-offset: 3px; border-radius: 6px; }
 
